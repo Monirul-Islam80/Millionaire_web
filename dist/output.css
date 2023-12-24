@@ -586,13 +586,13 @@ video {
 }
 
 .footer_bg_1 {
-  background-image: url(../src/images/Vector_footer_1.svg);
+  background-image: url(../images/Vector_footer_1.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .footer_bg_2 {
-  background-image: url(../src/images/Vector_footer_2.svg);
+  background-image: url(../images/Vector_footer_2.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
