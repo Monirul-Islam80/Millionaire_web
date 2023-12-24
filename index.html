@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Millionaire's Aisle</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/9b54e0b40e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body class="font-[Inter] box-border bg-[#f9f9f9]">
+    <!--                      header                   -->
+    <header
+      class="bg-[#00050B] text-white py-5 w-full flex justify-between px-[5%] flex-col md:flex-row lg:flex-row"
+    >
+      <div class="flex items-center flex-col md:flex-row lg:flex-row">
+        <img
+          src="./images/Layer_1.svg"
+          id="logo"
+          alt="Millionaire logo"
+          class="md:w-64 lg:w-64 w-36"
+        />
+
+        <ul id="navbar" class="flex text-[18px] ml-2 list-none">
+          <a href="#"
+            ><li
+              class="mx-2 p-2 hover:bg-gray-600 border border-transparent hover:border-solid hover:border-gray-50 rounded-sm"
+            >
+              Draw
+            </li>
+          </a>
+          <a href="#"
+            ><li
+              class="mx-2 p-2 hover:bg-gray-600 border border-transparent hover:border-solid hover:border-gray-50 rounded-sm"
+            >
+              Lottery
+            </li>
+          </a>
+          <a href="#"
+            ><li
+              class="mx-2 p-2 hover:bg-gray-600 border border-transparent hover:border-solid hover:border-gray-50 rounded-sm"
+            >
+              Scratch And Win
+            </li></a
+          >
+        </ul>
+      </div>
+
+      <div class="flex flex-nowrap items-center text-sm" id="r_menu">
+        <div>
+          <a href="#" class="ml-2"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="ml-2"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="ml-2"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="ml-2"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <ul
+          id="navbar"
+          class="flex items-center text-[18px] ml-2 list-none flex-col lg:flex-row gap-3"
+        >
+          <a href="#"
+            ><li
+              class="flex mx-2 p-2 bg-gray-600 border border-gray-50 rounded-sm"
+            >
+              <img
+                src="./images/icon/account_balance_wallet.svg"
+                alt="Wallet"
+                class="text-white mr-1"
+              />
+              Wallet
+            </li>
+          </a>
+          <a href="#"
+            ><li
+              class="flex mx-2 p-2 bg-gray-600 border border-gray-50 rounded-sm"
+            >
+              <img
+                src="./images/icon/account_circle.svg"
+                alt="Wallet"
+                class="text-white mr-1"
+              />
+              Account
+            </li>
+          </a>
+          <a href="#"
+            ><li
+              class="flex mx-2 p-2 items-center bg-[#D32053] rounded-sm h-fit"
+            >
+              <img src="./images/icon/shopping_basket.svg" alt="Wallet" />
+              <span class="mx-2">Cart</span>
+              <span
+                class="w-4 h-4 md:w-7 lg:w-7 md:h-7 lg:h-7 bg-white text-[#D32053] flex items-center justify-center rounded-full font-bold"
+                >1</span
+              >
+            </li>
+          </a>
+          <li
+            class="mx-2 p-2 bg-gray-600 border border-gray-50 rounded-sm h-fit"
+            id="close_btn"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </li>
+        </ul>
+      </div>
+      <span
+        class="mx-2 p-2 bg-gray-600 border border-gray-50 rounded-sm hidden w-fit"
+        id="menu_btn"
+      >
+        <img src="./images/icon/menu.svg" alt="menu button" />
+      </span>
+    </header>
+
+    <!-- Hero section -->
+    <section class="px-[5%] pt-10 pb-20 bg-black">
+      <div
+        id="hero"
+        class="flex items-center md:justify-between lg:justify-between justify-around p-14 border-[1px] border-[#D32053] rounded-xl w-full h-[70vh] relative drop-shadow-sm flex-col md:flex-row lg:flex-row"
+      >
+        <div class="text-white font-bold" id="hero-left">
+          <h1 class="text-[20px] md:text-[60px] lg:text-[60px]">
+            Guarantee your entry <br />
+            to becoming a
+          </h1>
+          <span class="text-[30px] md:text-[90px] lg:text-[90px]"
+            >Millionaire</span
+          >
+        </div>
+        <div class="w-1/2 flex justify-end z-10 relative">
+          <img
+            src="./images/image 3.svg"
+            alt="buy"
+            class="absolute z-10 w-full md:w-[40%] lg:w-[40%]"
+          />
+
+          <img
+            src="./images/image 3.svg"
+            alt="buy"
+            class="rotate-[35deg] opacity-60 w-full md:w-[40%] lg:w-[40%]"
+          />
+        </div>
+        <div class="absolute bottom-3">
+          <img src="./images/Millionaire.svg" alt="Millionaire image" />
+        </div>
+        <div class="absolute right-1 z-0">
+          <img src="./images/Vector 744.svg" alt="transparent logo" />
+        </div>
+      </div>
+    </section>
+
+    <div class="object-contain">
+      <img
+        src="./images/Vector 744 (1).svg"
+        alt="wave"
+        width="100%"
+        class="object-contain"
+      />
+    </div>
+
+    <!-- Content -->
+    <section
+      class="w-full h-full px-[5%] flex align-top flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between mt-4"
+    >
+      <!-- Draw Container -->
+      <div class="md:w-[30%] lg:w-[30%] w-full bg-white p-3 rounded-sm">
+        <div class="flex items-center justify-between mb-5">
+          <h1 class="font-bold">Draw</h1>
+          <div
+            class="bg-opacity-30 bg-gradient-to-r from-[#D32053]/20 from-[3.44%] to-[#460BC6]/20 to-[95.97%] rounded-md p-2"
+          >
+            <span class="font-bold text_gradient_color">View All</span>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <img src="./images/Rectangle 7.svg" alt="Rectangle 7" width="100%" />
+          <img src="./images/Rectangle 6.svg" alt="Rectangle 6" width="100%" />
+          <div class="w-full flex items-center justify-between">
+            <span class="bg-[#460BC6] text-white font-bold py-1 px-2 rounded-sm"
+              >BRONZE PEN</span
+            >
+            <div class="text-[#D32053] px-2 py-1 border border-gray-300">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="text-lg">
+            <span class="text-[#D32053] font-extrabold">WIN:</span>
+            <span class="font-bold">500</span> AED
+          </div>
+          <div class="text-sm">
+            <span class="text-[#334356]">Entry Price:</span>
+            <span class="text-[#D32053] font-bold"> 10.00 AED</span>
+          </div>
+
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+          <div class="bg-[#EEEBF5] flex items-center p-2">
+            <i class="fa-regular fa-calendar-check mr-2 text-green-600"></i>
+            <div class="text-sm">
+              <h4>Announce Time</h4>
+              <h3 class="font-bold">Every Day at 4PM UAE Time</h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <img src="./images/Rectangle 8.svg" alt="Rectangle 7" width="100%" />
+          <img src="./images/Rectangle 6.svg" alt="Rectangle 6" width="100%" />
+          <div class="w-full flex items-center justify-between">
+            <span class="bg-[#460BC6] text-white font-bold py-1 px-2 rounded-sm"
+              >BRONZE PEN</span
+            >
+            <div class="text-[#D32053] px-2 py-1 border border-gray-300">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="text-lg">
+            <span class="text-[#D32053] font-extrabold">WIN:</span>
+            <span class="font-bold">500</span> AED
+          </div>
+          <div class="text-sm">
+            <span class="text-[#334356]">Entry Price:</span>
+            <span class="text-[#D32053] font-bold"> 10.00 AED</span>
+          </div>
+
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+          <div class="bg-[#EEEBF5] flex items-center p-2">
+            <i class="fa-regular fa-calendar-check mr-2 text-green-600"></i>
+            <div class="text-sm">
+              <h4>Announce Time</h4>
+              <h3 class="font-bold">Every Day at 4PM UAE Time</h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <img src="./images/Rectangle 7.svg" alt="Rectangle 7" width="100%" />
+          <img src="./images/Rectangle 6.svg" alt="Rectangle 6" width="100%" />
+          <div class="w-full flex items-center justify-between">
+            <span class="bg-[#460BC6] text-white font-bold py-1 px-2 rounded-sm"
+              >BRONZE PEN</span
+            >
+            <div class="text-[#D32053] px-2 py-1 border border-gray-300">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="text-lg">
+            <span class="text-[#D32053] font-extrabold">WIN:</span>
+            <span class="font-bold">500</span> AED
+          </div>
+          <div class="text-sm">
+            <span class="text-[#334356]">Entry Price:</span>
+            <span class="text-[#D32053] font-bold"> 10.00 AED</span>
+          </div>
+
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+          <div class="bg-[#EEEBF5] flex items-center p-2">
+            <i class="fa-regular fa-calendar-check mr-2 text-green-600"></i>
+            <div class="text-sm">
+              <h4>Announce Time</h4>
+              <h3 class="font-bold">Every Day at 4PM UAE Time</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lottery Container -->
+      <div class="md:w-[30%] lg:w-[30%] w-full bg-white p-3 rounded-sm">
+        <div class="flex items-center justify-between mb-5">
+          <h1 class="font-bold">Lottery</h1>
+          <div
+            class="bg-opacity-30 bg-gradient-to-r from-[#D32053]/20 from-[3.44%] to-[#460BC6]/20 to-[95.97%] rounded-md p-2"
+          >
+            <span class="font-bold text_gradient_color">View All</span>
+          </div>
+        </div>
+        <div
+          class="border border-gray-300 rounded-md w-full flex flex-col items-start justify-between gap-5 mb-5"
+        >
+          <div
+            class="button_gradient w-full text-white flex flex-col items-center p-2 gap-3 rounded-md"
+          >
+            <div class="flex flex-col items-center gap-1">
+              <h3 class="text-sm">Raffle Draw:</h3>
+              <h2 class="font-bold">50 000 AED</h2>
+              <h3 class="text-sm">Grand Draw:</h3>
+              <h2 class="font-bold">100 000 AED</h2>
+            </div>
+            <div>
+              <div class="flex flex-col items-center gap-1 text-sm mb-2">
+                <span> Announce Time:</span>
+                <span>Saturday 22.06.2023</span>
+              </div>
+              <div class="flex items-center w-full gap-2">
+                <div class="flex flex-col items-center">
+                  <span
+                    class="rounded-full bg-[#D32053] px-4 py-2 border-2 border-transparent border-t-gray-200"
+                    >0</span
+                  >
+                  Day
+                </div>
+                <div class="flex flex-col items-center">
+                  <span
+                    class="rounded-full bg-[#D32053] px-4 py-2 border-2 border-transparent border-t-gray-200 border-r-gray-200"
+                    >0</span
+                  >
+                  Hr
+                </div>
+                <div class="flex flex-col items-center">
+                  <span
+                    class="rounded-full bg-[#D32053] px-4 py-2 border-2 border-transparent border-t-gray-200 border-r-gray-200 border-b-gray-200"
+                    >0</span
+                  >
+                  Min
+                </div>
+                <div class="flex flex-col items-center">
+                  <span
+                    class="rounded-full bg-[#D32053] px-4 py-2 border-2 border-gray-200"
+                    >0</span
+                  >
+                  Sec
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <div class="w-full border border-gray-400 rounded-sm">
+            <img
+              src="./images/Rectangle 13.svg"
+              alt="Rectangle 7"
+              width="100%"
+            />
+          </div>
+
+          <div class="w-full font-bold text-sm">
+            Buy one Mai Dubai <br />
+            Alkaline for
+          </div>
+          <div class="text-lg">
+            <span class="text-[#D32053] font-extrabold">35.00 AED</span>
+          </div>
+
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot container -->
+
+        <div
+          class="border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5 font-bold"
+        >
+          <div class="bg-[#00142C] w-full rounded-t-md text-white px-5 py-4">
+            <h1>Choose a number for each slot</h1>
+          </div>
+          <div class="w-full">
+            <div class="p-3 w-full">
+              <div>
+                <h2>SLOT 1</h2>
+              </div>
+              <div class="flex items-center w-full justify-between">
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+              </div>
+            </div>
+            <div class="p-3 w-full text-gray-400">
+              <div>
+                <h2>SLOT 2</h2>
+              </div>
+              <div class="flex items-center w-full justify-between">
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+              </div>
+            </div>
+            <div class="p-3 w-full text-gray-400">
+              <div>
+                <h2>SLOT 3</h2>
+              </div>
+              <div class="flex items-center w-full justify-between">
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+                <div
+                  class="md:p-4 lg:p-4 p-2 md:px-6 lg:px-6 px-4 rounded-md border border-gray-400"
+                >
+                  1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Line container -->
+        <div
+          class="border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5 font-bold"
+        >
+          <div
+            class="bg-[#460BC6] w-full rounded-t-md px-5 py-4 flex items-center justify-between"
+          >
+            <h1 class="text-white">Line 1</h1>
+            <div>
+              <button
+                class="bg-white px-2 py-1 rounded-md text-lg mr-2"
+                id="shuffle"
+              >
+                <i class="fa-solid fa-shuffle"></i></button
+              ><button
+                class="bg-[#D32053] px-2 py-1 rounded-md border-2 border-white text-white text-lg"
+                id="clear"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="p-3 w-full">
+              <div
+                id="line_list"
+                class="w-full flex items-center justify-between flex-wrap"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Scratch Cards-->
+      <div class="md:w-[30%] lg:w-[30%] w-full bg-white p-3 rounded-sm">
+        <div class="flex items-center justify-between mb-5">
+          <h1 class="font-bold">Scratch Cards</h1>
+          <div
+            class="bg-opacity-30 bg-gradient-to-r from-[#D32053]/20 from-[3.44%] to-[#460BC6]/20 to-[95.97%] rounded-md p-2"
+          >
+            <span class="font-bold text_gradient_color">View All</span>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <div class="w-full border border-gray-400 rounded-sm">
+            <img
+              src="./images/Rectangle 14.svg"
+              alt="Rectangle 7"
+              width="100%"
+            />
+          </div>
+
+          <span class="text-[#D32053] font-bold"> WIN UP TO:</span>
+          <span class="text-lg font-bold"> 50,000-100,000 AED</span>
+
+          <div class="text-sm">
+            <span class="text-[#334356]">Entry Price:</span>
+            <span class="text-[#D32053] font-bold"> 10.00 AED</span>
+          </div>
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <div class="w-full border border-gray-400 rounded-sm">
+            <img
+              src="./images/Rectangle 14.svg"
+              alt="Rectangle 7"
+              width="100%"
+            />
+          </div>
+
+          <span class="text-[#D32053] font-bold"> WIN UP TO:</span>
+          <span class="text-lg font-bold"> 50,000-100,000 AED</span>
+
+          <div class="text-sm">
+            <span class="text-[#334356]">Entry Price:</span>
+            <span class="text-[#D32053] font-bold"> 10.00 AED</span>
+          </div>
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-3 border border-gray-300 rounded-md w-full flex flex-col items-start gap-5 mb-5"
+        >
+          <div class="w-full border border-gray-400 rounded-sm">
+            <img
+              src="./images/Rectangle 14.svg"
+              alt="Rectangle 7"
+              width="100%"
+            />
+          </div>
+
+          <span class="text-[#D32053] font-bold"> WIN UP TO:</span>
+          <span class="text-lg font-bold"> 50,000-100,000 AED</span>
+
+          <div class="text-sm">
+            <span class="text-[#334356]">Entry Price:</span>
+            <span class="text-[#D32053] font-bold"> 10.00 AED</span>
+          </div>
+          <div class="w-full flex items-center">
+            <div class="font-bold mr-3">
+              <span
+                class="px-2 py-1 border border-gray-300 rounded-s-sm text-[#334356]"
+                >-</span
+              ><span
+                class="px-2 py-1 border border-gray-300 border-x-0 text-[#334356]"
+                >1</span
+              ><span
+                class="px-2 py-1 border border-gray-300 rounded-e-sm text-[#334356]"
+                >+</span
+              >
+            </div>
+            <div
+              class="button_gradient relative rounded-md py-2 w-full text-center text-white group/button x hover:after:block"
+            >
+              <span
+                class="z-10 group-hover/button:text_gradient_color group-hover/button:font-bold relative"
+                >Add to Cart</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- winner lists section  -->
+    <section class="w-full p-0 md:p-[5%] lg:p-[5%]">
+      <div class="font-bold text-2xl">
+        <h1>Winners Lists</h1>
+      </div>
+      <div
+        class="flex items-center flex-col md:flex-row lg:flex-row w-full h-full md:h-[60vh] lg:h-[60vh]"
+      >
+        <div class="w-full md:w-[45%] lg:w-[45%] mx-auto mt-8 overflow-auto">
+          <table class="table-auto w-full overflow-auto h-fit">
+            <thead class="bg-[#DFDBE8] text-[#4D5B6C]">
+              <tr>
+                <th class="px-4 py-2">Name</th>
+                <th class="px-4 py-2">Ticket Number</th>
+                <th class="px-4 py-2">Draw Date</th>
+                <th class="px-4 py-2">Prize</th>
+              </tr>
+            </thead>
+            <tbody id="winner_list_data"></tbody>
+          </table>
+        </div>
+        <div
+          class="w-full md:w-[45%] lg:w-[45%] bg-white h-full flex items-center justify-center"
+        >
+          <div class="aspect-video w-full">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/eA4dFTo5ZsE?si=xPSNlq0glAK7lNp_"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- find us  -->
+    <section class="w-full">
+      <div
+        class="px-[5%] py-5 flex items-center justify-between flex-col md:flex-row lg:flex-row"
+      >
+        <h1 class="text-2xl font-bold">Find US</h1>
+        <div
+          class="flex items-center justify-between gap-2 flex-col md:flex-row lg:flex-row"
+        >
+          <span>
+            Business Hours <br />
+            <b>Everyday: 9am - 9pm GMT</b></span
+          >
+          <span
+            >Write us an email <br />
+            <b>support@millionaireaisle.com</b></span
+          >
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.768895139021!2d91.8204350749956!3d22.362353479642078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd888b263472b%3A0x2f0e0bde696f1d3c!2sRoyex%20Technologies!5e0!3m2!1sen!2sbd!4v1703415092338!5m2!1sen!2sbd"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Latest News -->
+    <section class="w-full px-[5%] h-full">
+      <div class="py-5">
+        <h1 class="text-2xl font-bold">Latest News</h1>
+      </div>
+      <div
+        class="flex items-center w-full justify-between h-full flex-col md:flex-row lg:flex-row"
+      >
+        <div
+          class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-start justify-center gap-2 p-3 h-full"
+        >
+          <img
+            src="./images/Rectangle 18.svg"
+            alt=""
+            width="100%"
+            height="40%"
+          />
+          <h2 class="font-bold text-lg">At-Home Valentine's Day Ideas</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+            ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum
+            arcu vitae elementum curabitur.
+          </p>
+          <span class="text_gradient_color font-bold">Read More</span>
+        </div>
+        <div
+          class="w-full md:w-[25%] lg:w-[25%] flex flex-col items-start justify-center gap-2 p-3 h-full"
+        >
+          <img
+            src="./images/Rectangle 19.svg"
+            alt=""
+            width="100%"
+            height="40%"
+          />
+          <h2 class="font-bold text-lg truncate w-full">
+            How to Save Money on Baby Essentials
+          </h2>
+          <p class="text-clip overflow-hidden w-full">
+            Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada
+            bibendum arcu vitae elementum curabitur. Velit dignissim sodales
+            <span class="text_gradient_color font-bold">Read More</span>
+          </p>
+        </div>
+        <div
+          class="w-full md:w-[25%] lg:w-[25%] flex flex-col items-start justify-center gap-2 p-3 h-full"
+        >
+          <img
+            src="./images/Rectangle 20.svg"
+            alt=""
+            width="100%"
+            height="40%"
+          />
+          <h2 class="font-bold text-lg truncate w-full">
+            Clever Ways to Celebrate Christmas for Kids & Toddlers
+          </h2>
+          <p class="text-clip overflow-hidden w-full">
+            Id ornare arcu odio ut sem nulla. Sagittis aliquam malesuada
+            bibendum arcu vitae elementum curabitur. Velit dignissim sodales
+            <span class="text_gradient_color font-bold">Read More</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full h-full">
+      <div
+        class="footer_bg_1 w-full md:h-[50vh] lg:h-[50vh] h-full flex items-center justify-between px-[5%] flex-col md:flex-row lg:flex-row"
+      >
+        <div
+          class="flex items-center justify-center flex-col w-full md:w-[50%] lg:w-[50%] h-full gap-4"
+        >
+          <h1 class="text-2xl font-bold text-black">
+            Download <br />
+            The App Now
+          </h1>
+          <p class="text-sm">
+            You can easily download our application on App Store and Google play
+          </p>
+          <div
+            class="w-full flex items-center flex-col md:flex-row lg:flex-row gap-4"
+          >
+            <img
+              src="./images/Google Play.svg"
+              alt="google play"
+              class="w-1/2 md:w-full lg:w-full"
+            />
+            <img
+              src="./images/App Store.svg"
+              alt="app Store"
+              class="w-1/2 md:w-full lg:w-full"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full md:w-[50%] lg:w-[50%] z-10 h-full items-center justify-center hidden md:flex lg:flex"
+        >
+          <div class="w-20 relative top-0">
+            <div class="w-full absolute top-0 z-10">
+              <img
+                src="./images/iPhone-13-Pro-Front.svg"
+                alt="iPhone-13-Pro-Front"
+                width="100%"
+              />
+            </div>
+
+            <div class="w-full absolute top-0 -rotate-12 right-12 z-0">
+              <img
+                src="./images/iPhone-13-Pro-Front.svg"
+                alt="iPhone-13-Pro-Front"
+                width="100%"
+              />
+            </div>
+            <div class="w-full absolute top-0 rotate-12 left-12 z-0">
+              <img
+                src="./images/iPhone-13-Pro-Front.svg"
+                alt="iPhone-13-Pro-Front"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer_bg_2 w-full h-full flex flex-col items-start justify-between px-[5%] pb-9"
+      >
+        <div
+          class="w-full flex items-center justify-between text-white h-full md:h-[50vh] lg:h-[50vh] flex-col md:flex-row lg:flex-row"
+        >
+          <div class="w-full md:w-1/4 lg:w-1/4 flex flex-col gap-5">
+            <img src="./images/Layer_1.svg" alt="logo" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id
+              lobortis .
+            </p>
+            <div class="text-white">
+              <a href="#" class="ml-2"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="ml-2"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="ml-2"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="ml-2"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-row md:flex-col lg:flex-col items-center md:items-start lg:items-start gap-5"
+          >
+            <h1 class="font-bold">Quick Links</h1>
+            <div class="flex flex-col text-sm">
+              <span> Terms of Service</span>
+              <span>Contact Us</span>
+              <span>About Us</span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row md:flex-col lg:flex-col items-center md:items-start lg:items-start gap-5"
+          >
+            <h1>Address</h1>
+            <div class="flex flex-col gap-3">
+              <span>
+                Business Hours <br />
+                Everyday: 9am - 9pm GMT
+              </span>
+              <span>
+                Write us an email<br />
+                support@millionaireaisle.com
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h1>Get in touch</h1>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipiscing elit, sed do eiusmod tempor
+            </span>
+            <div>
+              <input
+                type="text"
+                placeholder="Email"
+                class="p-3 rounded-md border-0 outline-none focus:outline-none"
+              />
+              <span class="bg-[#D32053] p-3 rounded-md"> Subscribe </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-white p-4 border-2 mt-4 border-gray-300 bg-slate-400 bg-opacity-40 w-full h-[15vh] flex items-center justify-between gap-2 rounded-md"
+        >
+          <h1>Download The App Now</h1>
+          <div
+            class="w-1/3 flex flex-col md:flex-row lg:flex-row items-center gap-4"
+          >
+            <img
+              src="./images/Google Play.svg"
+              alt="google play"
+              width="100%"
+            />
+            <img src="./images/App Store.svg" alt="app Store" width="100%" />
+          </div>
+          <div
+            class="h-full overflow-hidden p-4 items-start w-1/3 hidden md:flex lg:flex"
+          >
+            <img
+              src="./images/iPhone-13-Pro-Front.svg"
+              alt="iPhone-13-Pro-Front"
+              class="-rotate-12"
+              width="50%"
+            />
+            <img
+              src="./images/iPhone-13-Pro-Front.svg"
+              alt="iPhone-13-Pro-Front"
+              class="-rotate-12"
+              width="50%"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

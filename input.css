@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background: rgb(0, 0, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 0.5075280112044818) 7%,
+    rgba(70, 11, 198, 0.5215336134453781) 32%,
+    rgba(141, 22, 141, 0.5215336134453781) 59%,
+    rgba(211, 32, 83, 0.5887605042016807) 90%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 0.5075280112044818) 7%,
+    rgba(70, 11, 198, 0.5215336134453781) 32%,
+    rgba(141, 22, 141, 0.5215336134453781) 59%,
+    rgba(211, 32, 83, 0.5887605042016807) 90%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 0.5075280112044818) 7%,
+    rgba(70, 11, 198, 0.5215336134453781) 32%,
+    rgba(141, 22, 141, 0.5215336134453781) 59%,
+    rgba(211, 32, 83, 0.5887605042016807) 90%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#d32053",GradientType=1);
+  box-shadow: 0px 0px 43px 40px #00000070 inset;
+}
+@layer components {
+  .text_gradient_color {
+    background: -webkit-linear-gradient(#d32053, #460bc6);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .footer_bg_1 {
+    background-image: url(../src/images/Vector_footer_1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer_bg_2 {
+    background-image: url(../src/images/Vector_footer_2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.button_gradient {
+  background: var(--Gr, linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%));
+}
+.x::after {
+  content: "Add to Cart";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 98%;
+  height: 95%;
+  color: black;
+  background-color: white;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 4px;
+  display: none;
+  z-index: 0;
+}
